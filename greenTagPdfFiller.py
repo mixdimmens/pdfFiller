@@ -5,15 +5,13 @@ def green_tag_filler(oso, com=True):
 
 
     pdf_to_fill_path = '/Users/maximdiamond/Documents/DJ/forms_reference/forms/Blank Green Tag.pdf'
-
-    # oso = 23807
     workbook = 'COM_COL_PaperworkInfo'
-    # com = True
 
-    # blah
-    Order = Upholstery(oso, workbook, com= True)
+    # create order object
+    Order = Upholstery(oso, workbook, com)
     Order.data_gen()
 
+    # fields 
     fields = {
     'Decca_Code': Order.job_code,
     'Material_Name': Order.material,

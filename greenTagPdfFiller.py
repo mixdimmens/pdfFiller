@@ -7,7 +7,7 @@ def green_tag_filler(oso, com=True):
     pdf_to_fill_path = '/Users/maximdiamond/Documents/DJ/forms_reference/forms/Blank Green Tag.pdf'
 
     # oso = 23807
-    workbook = 'COM_COL_PaperworkInfo'
+    workbook = 'COM-COL_PaperworkInfo'
     # com = True
 
     # blah

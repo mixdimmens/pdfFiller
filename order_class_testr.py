@@ -1,7 +1,7 @@
 from Orders import Order
 from UpholsteryOrder import Upholstery
 
-book_name = 'COM_COL_PaperworkInfo'
+book_name = 'COM-COL_PaperworkInfo'
 
 # oso_23800 = Order(23663, book_name, 1)
 # oso_23800.data_strip()

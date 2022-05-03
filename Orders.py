@@ -3,6 +3,8 @@ import gspread
 import re
 from oauth2client.service_account import ServiceAccountCredentials
 
+
+credentailsPath = '/Users/maximdiamond/Code/DJi/scripts/pdfScripts/production-report-api-739f8c22e6b8.json'
 class Order(object):
 
     def __init__(self, oso, workbook, sheet_index= 0):
@@ -15,7 +17,7 @@ class Order(object):
         scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 
         # add credentials to the account
-        creds = ServiceAccountCredentials.from_json_keyfile_name('production-report-api-739f8c22e6b8.json', scope)
+        creds = ServiceAccountCredentials.from_json_keyfile_name(credentailsPath, scope)
 
         # authorize the clientsheet 
         client = gspread.authorize(creds)
